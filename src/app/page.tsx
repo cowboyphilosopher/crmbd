@@ -1,8 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import * as React from 'react';
 import '@/lib/env';
-
 
 /**
  * SVGR Support
@@ -22,10 +22,21 @@ export default function HomePage() {
       <head>
         <title>CRMBD</title>
       </head>
-      <div className="bg-gray-900 text-white h-screen flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center text-center">
-          <img src="/images/fgm.jpg" alt="CRMBD Image" className="max-w-full h-auto" />
-          <p className="mt-4 text-5xl">CRMBD</p>
+      <div className='bg-gray-900 text-white h-screen flex items-center justify-center'>
+        <div className='flex flex-col items-center justify-center text-center'>
+          <Image
+            src='/images/crmbdlogo1.jpg'
+            alt='CRMBD Image'
+            className='max-w-full h-auto'
+          />
+          <div className='instagram-media'>
+            <div style={{ padding: '16px' }}>
+              <a href='https://www.instagram.com/crmbizdev/'>
+                Follow CRMBizDev on Instagram
+              </a>
+              <p className='mt-4 text-lg'>crmbd@mail.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
